@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function Positive(arr) {
+  let numSet = new Set(arr);
+  let i = 1;
+  while (true) {
+    if (!numSet.has(i)) {
+      return i;
+    }
+    i++;
+  }
+}
+let arr1 = [1, 2, 5, 7];
+console.log(Positive(arr1))
+let arr2 = [10, 5, 7];
+console.log(Positive(arr2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Hello world");
+        let student1 = "Nam Sơn";
+        let student2 = "Thế Minh";
+        let student3 = "Diên Tiến";
+        let studentList = new Array(student1,student2,student3);
+        let numberList = [10,16,1,2005];
+        console.log(studentList);
+        console.log(numberList)
+        let numbers =[10,20,30,40,50];
+        console.log("numbers[2]=",numbers[2]);
+        for(let i=0;i<numbers.length;i++){
+            console.log(`numbers[${i}]=`,numbers[i]);
+        } 
+        for( let number of numbers){
+            console.log("tung phan tu",number);
+        }
+        for(let index in numbers){
+            console.log(`numbers[${index}]=`,numbers[index]);
+        }
+        let students =[
+            "Nam Sơn",
+            "Minh Anh",
+            "Mai Hoa",
+            "Nhi Trần",
+        ];
+        console.log("Danh sach sinh vien:",students);
+        students.unshift("Vy Anh");
+        console.log("Danh sach sinh vien:",students);
+        students.push("Như Quỳnh");
+        console.log("Danh sach sinh vien:",students);
+    </script>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberList = [10,5,16,24,27,7];
+        let n =+prompt("Nhap so can tim");
+        for(let i=0;i<numberList.length;i++){
+            if(isNaN(numberList[i])){
+                console.log("Gia tri nhap vao khong hop le");}
+                if(n === numberList[i]){
+                    console.log("Vi tri cua phan tu trong mang la",i);
+                }if(n !== numberList[i]){
+                    console.log("Phan tu khong ton tai");
+                }
+        }
+    </script>
+</body>
+</html>
